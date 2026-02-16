@@ -1,5 +1,6 @@
 library(tidyverse)
-
+#please note that the plasmid.csv file was produced in Excel manually, combining both annotations 
+#from prokka and BLAST 
 plasmid <- read.csv("plasmid.csv")
 plasmid <- plasmid %>% mutate(sample=recode(sample,
                                             "56" = "1h RNApolyAdep",
@@ -21,3 +22,4 @@ colnames(plasmid_table)[1:2] <-c("PROKKA_ID", "Improved_Annotation")
 plasmid_table
 
 write.csv(plasmid_table, "plasmid_counts_table.csv", row.names = FALSE)
+
