@@ -150,17 +150,3 @@ downreg_kegg_id <- downregulated$KEGG_ID
 writeClipboard(downreg_kegg_id)
 padj <- highest_significance_padj$KEGG_ID
 writeClipboard(padj)
-#after putting it into kegg mapper, the ids that are upregulated are the most active in 
-#these pathways: 
-'OUT OF ALL UPREGULATED/DOWNREGULATED ETC:
-upregulated: 
-metabolic pathways (29), biosynthesis of secondary metabolites 15, microbial metabolism in diverse 
-enrivonments 9, biosynthesis of cofactors 7 OUT OF 51 pathways.
-
-downregulated: out of 8 pathways, the top is ribosome 10. 
-
-padj: 
-ribosome 10, bacterial secretion system 4 metabolic pathways 4 biosynthesis of secondary metabolites 3
-rna polymerase 2, rna degradation 2
-
-'
